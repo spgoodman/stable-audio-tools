@@ -1,7 +1,17 @@
 # stable-audio-tools
 Training and inference code for audio generation models
 
+## Changes in this fork
+* Use the webui.sh to install, launch and configure defaults
+* Removed default to create shared gradio link, instead this is set in the webui.sh script
+
 # Install
+
+## Using webui.sh
+1. Edit webui.sh with defaults that suit you, such as commenting out CUDA_VISIBLE_DEVICES if you don't need to set a specific GPU
+2. Run webui.sh and it will create a virtual environment,and install alonside pre-reqs and flash attention
+
+## Using the original instructions below
 
 The library can be installed from PyPI with:
 ```bash
